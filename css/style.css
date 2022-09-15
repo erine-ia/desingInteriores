@@ -1,8 +1,16 @@
+@font-face {
+    font-family:'monteserrat-reg' ;
+    src: url("../fontes/MontserratAlternates-Regular.ttf");
+}
+
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
+
 
 body{
     width: 100%;
@@ -15,6 +23,10 @@ body{
     width: 80%;
     margin: 0 auto;
 
+}
+
+.ghost{
+    height: 100px;
 }
 
 header{
@@ -61,7 +73,8 @@ header{
     grid-area: menu;
     /* border: solid 1px; */
     margin-top: 5em;
-    font-family: Arial, Helvetica, sans-serif;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'monteserrat-reg';
 }
 
 
@@ -80,6 +93,7 @@ header{
     /* background-color: rgb(26, 31, 25,0.3); */
     /* box-shadow: rgba(119, 177, 32, 0.899) 2px 2px 2px;  */
     color: greenyellow;
+    text-shadow: rgba(64, 95, 19, 0.899) 1px 1px 1px; 
     
     
 }
@@ -98,10 +112,136 @@ header{
 
 .title{
     width: 25%;
-    border: solid red;
+    /* border: solid red; */
     position: relative;
     vertical-align: middle;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'monteserrat-reg'; 
     top:20%;
+    font-size: 3em;
+    color: rgb(45, 47, 43);
     
+
+    
+}
+
+/* pagina home */
+main{
+    width: 100%;
+    background-color: rgba(196, 215, 225, 0.01);
+    padding-top: 5%;
+    padding-bottom: 5%;
+    
+}
+
+.main-txt hr{
+    background-color: greenyellow;
+    height: 1.3px;
+    border-color: black solid;
+}
+
+
+
+main .main-txt{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.main-txt p{
+    padding: 2% 4%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2{
+    font-family: 'monteserrat-reg';
+    font-size: 2em;
+    padding: 5% 0;
+    
+
+}
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer{
+    height: 290px;
+    width: 100%;
+    background-color: rgb(26, 31, 25);
+    color: white;
+    padding-bottom: 5%;
+}
+
+footer .container{
+    padding-top: 5%;
+    
+    display:grid;
+    grid-template: "links ... ende... redes...subs";
+    grid-template-areas: 10% 20% 50%;
+}
+
+h4{
+    font-family: 'monteserrat-reg';
+}
+
+footer ul li{
+    list-style: none;
+}
+
+.sec-links{
+    grid-area: links;
+    /* width: 33%; */
+    /* float:right; */
+
+}
+
+.links{
+    color: white;
+    font-family: 'monteserrat-reg';
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+}
+
+.link:hover{
+    color: greenyellow;
+}
+
+.endereco{
+    grid-area: ende;
+    font-family: 'monteserrat-reg';
+    /* float: right; */
+}
+
+.endereco p{
+    line-height: 2em;
+
+}
+
+.endereco span{
+    font-weight: 700;
+    color: greenyellow;
+}
+
+.sec-redes{
+    grid-area: redes;
+}
+
+.subscribe{
+    grid-area: subs;
+}
+
+.copy{
+    text-align: center;
+    padding: 2% 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: greenyellow;
 }
