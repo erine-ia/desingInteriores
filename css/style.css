@@ -269,9 +269,7 @@ h2{
     
 }
 
-.sec-sobre img{
-    
-}
+
 
 .sobre{
     width: 80%;
@@ -619,13 +617,17 @@ footer ul li{
 
 /* media querys */
 
-@media screen and (max-width:600px ){
+@media screen and (max-width:650px ){
+   
     /* home */
     .cabecalho{
         position: relative;
         width: 100%;
     
         
+    }
+    .cabecalho-main{
+        width: 100%;
     }
     
     .logo{
@@ -650,7 +652,7 @@ footer ul li{
     }
 
     .menu-item{
-        width: 100%;
+        width: 80%;
         /* border:solid;  */
         padding: 2%;
         display: block;
@@ -658,6 +660,8 @@ footer ul li{
 
     .menu-item:hover{
         background-color: white;
+        border: none;
+        width: 80%;
         color: greenyellow;
     }
 
@@ -794,6 +798,7 @@ footer ul li{
         display:block;
         height: max-content;
         margin-top: 5%;
+        
     }
 
     footer .container{
@@ -803,6 +808,144 @@ footer ul li{
     .links{
         width: 100%;
     }
+
+    .endereco{
+        padding-top: 20px;
+        color:white;
+    }
+
+    .endereco p{
+        color: white;
+    }
+
+
+    /* sobre */
+
+    .main-sobre{
+        width: 100%;
+    }
+    .sec-sobre{
+        text-align: center;
+    }
+    .sec-sobre img{
+        width: 100%;
+    }
+    .sobre{
+        width: 100%;
+        position: relative;
+        bottom:15em;
+        font-size: 15px;
+    }
+    .sobre h1{
+        font-size: 1em;
+    }
+
+
+    /* servicos */
+
+    .equipe-txt{
+        
+       font-size: 14px;
+        width: 100%;
+        margin: auto;
+        top:20em; 
+        padding: 5%;
+        background-color: rgba(240, 248, 255, 0.451);
+        text-align: justify;
+    }
+
+
+    .proj-txt{
+
+        width: 100%;
+        text-align: justify;
+        background-color: rgba(240, 248, 255, 0.606);
+        padding: 5%;
+        display: block;
+        position: absolute;
+        top:20em;
+       
+      
+    
+    }
+
+   
+
+
+    
+    .projetos{
+        width: 100%;
+        background-color:white;
+        position: relative;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-family: Arial, Helvetica, sans-serif;
+    
+        
+        
+    }
+
+    /* contato */
+
+    .sec-formulario{
+        width: 100%;
+        display: block;
+        height: 700px;
+        text-align: center;
+    }
+
+    form{
+        width: 90%;
+    }
+
+    iframe{
+        width: 100%;
+        height: 300px;
+        padding-top: 5%;
+        margin:0 auto;
+        border-radius: 10px;
+       
+        /* display: block; */
+        background-color: greenyellow;
+    }
+    
+    
+    .projetos section{
+        height: 600px;
+        position: relative; 
+       
+    
+    }
+    
+    
+    
+    .proj{
+        
+        width: 100%;
+        margin-bottom:5px;   
+        height: 100px;
+        
+    }
+    .proj:nth-child(2){
+        
+        text-align: center;
+        margin-top: 10px;
+        
+        
+        
+    
+    }
+
+    
+    .proj-txt h4{
+        padding: 5% 0;
+        font-size: 1.3em;
+    }
+    
+    .proj img{
+        width: 100%;
+    }
+
 
   
 }
